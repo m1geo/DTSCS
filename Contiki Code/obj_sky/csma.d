@@ -1,0 +1,50 @@
+obj_sky/csma.o: /home/george/contiki/core/net/mac/csma.c \
+ /home/george/contiki/core/./net/mac/csma.h \
+ /home/george/contiki/core/./net/mac/mac.h \
+ /home/george/contiki/platform/sky/./contiki-conf.h \
+ /home/george/contiki/platform/sky/./platform-conf.h \
+ /home/george/contiki/cpu/msp430/./msp430def.h project-conf.h \
+ /home/george/contiki/core/./dev/radio.h \
+ /home/george/contiki/core/./net/packetbuf.h \
+ /home/george/contiki/core/./net/rime/rimeaddr.h \
+ /home/george/contiki/core/./net/queuebuf.h \
+ /home/george/contiki/core/./sys/ctimer.h \
+ /home/george/contiki/core/./sys/etimer.h \
+ /home/george/contiki/core/./sys/timer.h \
+ /home/george/contiki/core/./sys/clock.h \
+ /home/george/contiki/core/./sys/process.h \
+ /home/george/contiki/core/./sys/pt.h \
+ /home/george/contiki/core/./sys/lc.h \
+ /home/george/contiki/core/./sys/lc-switch.h \
+ /home/george/contiki/core/./sys/cc.h \
+ /home/george/contiki/core/./lib/random.h \
+ /home/george/contiki/core/./net/netstack.h \
+ /home/george/contiki/core/./net/mac/rdc.h \
+ /home/george/contiki/core/./net/mac/framer.h \
+ /home/george/contiki/core/./lib/list.h \
+ /home/george/contiki/core/./lib/memb.h
+/home/george/contiki/core/net/mac/csma.c :
+ /home/george/contiki/core/./net/mac/csma.h :
+ /home/george/contiki/core/./net/mac/mac.h :
+ /home/george/contiki/platform/sky/./contiki-conf.h :
+ /home/george/contiki/platform/sky/./platform-conf.h :
+ /home/george/contiki/cpu/msp430/./msp430def.h project-conf.h :
+ /home/george/contiki/core/./dev/radio.h :
+ /home/george/contiki/core/./net/packetbuf.h :
+ /home/george/contiki/core/./net/rime/rimeaddr.h :
+ /home/george/contiki/core/./net/queuebuf.h :
+ /home/george/contiki/core/./sys/ctimer.h :
+ /home/george/contiki/core/./sys/etimer.h :
+ /home/george/contiki/core/./sys/timer.h :
+ /home/george/contiki/core/./sys/clock.h :
+ /home/george/contiki/core/./sys/process.h :
+ /home/george/contiki/core/./sys/pt.h :
+ /home/george/contiki/core/./sys/lc.h :
+ /home/george/contiki/core/./sys/lc-switch.h :
+ /home/george/contiki/core/./sys/cc.h :
+ /home/george/contiki/core/./lib/random.h :
+ /home/george/contiki/core/./net/netstack.h :
+ /home/george/contiki/core/./net/mac/rdc.h :
+ /home/george/contiki/core/./net/mac/framer.h :
+ /home/george/contiki/core/./lib/list.h :
+ /home/george/contiki/core/./lib/memb.h :
