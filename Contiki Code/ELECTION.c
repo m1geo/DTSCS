@@ -1,1 +1,0 @@
-DTSCS_light.c
