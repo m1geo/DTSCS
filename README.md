@@ -116,26 +116,42 @@ A comprehensive legend for the Timeline is available in the Cooja Help files, an
 The full list of code parameters is clearly labelled in the top of the source C file, `DTSCS_light.c`.  You are also able to adjust any of the hard-coded channel allocations, and force certain nodes to become SYNC nodes.
 Key values & functions are:
 
+
 `rtPERIOD` - period, T
+
 `Chans` - number of channels in use
+
 `alpha` - DESYNC coupling parameter
+
 `beta` - SYNC coupling parameter
+
 `tConvergedGuard` - the convergence threshold (b_thres)
+
 `NC`, `NE` and `NL` - the number of periods before convergence, elections and full listening, respectively
+
 `setChannels(rimeaddr_t)` -  takes node ID; returns the TX and RX channel numbers - no balancing.
+
 
 ## DT-SCS Light Code Notes
 The code timing is quite tight in places. Printing to the serial port for debugging can be done, but it must be done carefully, and in a part of the program where the time requirements are not tight. At present, the balancing and channel swap features of the code are still being explored, and so, are not included in the light version of the protocol.  Channel assignments are hard coded as a result, see `setChannels(rimeaddr_t)` in the source file`DTSCS_light.c`.  The election process is a little buggy, and prefers the highest node ID.  Restarting the network again usually produces a working simulation.
 
 ## Authors
 George Smart (<g.smart@ee.ucl.ac.uk>) --- PhD Student
+
 Yiannis Andreopoulos (<iandreop@ee.ucl.ac.uk>) --- Supervisor
 
+
 Telecommunications Research Group Office
+
 Department of Electronic & Electrical Engineering
+
 University College London
+
 Malet Place, London
+
 WC1E 7JE
+
 United Kingdom
+
 
 January 2016.
