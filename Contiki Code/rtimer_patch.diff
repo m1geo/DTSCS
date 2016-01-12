@@ -1,0 +1,14 @@
+--- rtimer_original.c	2016-01-12 00:17:52.959177785 +0000
++++ rtimer_modded.c	2014-08-30 19:12:34.381996000 +0100
+@@ -83,9 +83,9 @@
+   rtimer->time = time;
+   next_rtimer = rtimer;
+ 
+-  if(first == 1) {
++  //if(first == 1) {
+     rtimer_arch_schedule(time);
+-  }
++  //}
+   return RTIMER_OK;
+ }
+ /*---------------------------------------------------------------------------*/

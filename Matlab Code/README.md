@@ -1,5 +1,5 @@
-DT-SCS Light in Contiki-OS
-==========================
+DT-SCS Light in Matlab
+======================
 
 This is the Matlab Code folder.
 

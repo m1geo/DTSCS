@@ -1,5 +1,5 @@
-DT-SCS Light in Contiki-OS
-==========================
+DT-SCS Light - Contiki-OS & Matlab
+==================================
 
 This repository containts a light implementation of the *Decentralized Time-Synchronized Channel Swapping (DT-SCS)* MAC protocol for Ad-Hoc Wireless Networks. The code is written in C for [Contiki open source operating system](http://www.contiki-os.org/), version 2.7, for TelosB (T-mote Sky) wireless sensor motes.  Other variations of Contiki and mote are not guaranteed compatible.
 
@@ -12,8 +12,16 @@ More on the MAC and RDC settings of Contiki-OS [can be found here](https://githu
 
 >CFLAGS += -DPROJECT_CONF_H=\"project-conf.h\"
 
+In order to update and revise the firing times of the motes, we have had to modify the Contiki-OS Rtimer library. Provided is a small patch file, `rtimer_patch.diff` which will perform the patch for you. This is covered more in the subsequent *Compiling DT-SCS Light* section.
+
 ## Compiling DT-SCS Light
-In order to build DT-SCS Light in Contiki-OS 2.7, you will need to first edit the `Makefile` to reflect the location of Contiki-OS.  The default location is in `/home/<username>/contiki` as with here.
+In order to build DT-SCS Light in Contiki-OS 2.7, you will need to first need to ensure you have downloaded the Contiki-OS source, and placed the contiki root folder inside your users Linux home folder.  Here, this is assumed to be `/home/<username>/contiki` . You will need to change *username* to match your environment, and this will need to be reflected in the `Makefile` (detailed below).
+
+The second step is to patch the rtimer file to allow for successive updates in firing time. The file requiring patching is `contiki/core/sys/rtimer.c`. We provide a patch file, `rtimer_patch.diff` which will perform the modifications for you. This must be done before compiling, otherwise the protocol will not work correctly.  Use `make clean` if you have compiled without this patch.
+
+> patch /home/*username*/contiki/core/sys/rtimer.c < rtimer_patch.diff
+
+The third step is to edit the `Makefile` to reflect the location of Contiki-OS, as in the first paragraph.  The default location is in as with here.  Edit `Makefile` and change the following line to match your username and Contiki location.
 
 > CONTIKI=/home/george/contiki
 
