@@ -82,7 +82,7 @@ The resulting layout is shown in the Network window of the Cooja Simulator.
 From here, progress on to the *Simulating DT-SCS Light* section.
 
 ### Loading an Existing Simulation
-If you chose to open an existing simulation, you should select `File`, then `Open simulation` and finally `Browse...`.  On the Open window, you should select the simulation you wish to open. With Cooja, simulations are given a `csc` file extension.  We provide a copy of the simulation we created above, called `DTSCS_Light_Example.csc`, for your convenience.
+If you chose to open an existing simulation, you should select `File`, then `Open and Reconfigure` and finally `Browse...`.  On the Open window, you should select the simulation you wish to open. With Cooja, simulations are given a `csc` file extension.  We provide a copy of the simulation we created above, called `DTSCS_Light_Example.csc`, for your convenience.  You can use the default options, since they are loaded from the saved file, but you will need to update the location the source file, `DTSCS_light.c`, since this will change depending on the location of the files on your computer.
 
 The file will load, and you will see the simulation window with motes already added, as before in the last image of *Creating a New Simulation*.
 
