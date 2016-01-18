@@ -1,6 +1,6 @@
-DT-SCS Light in Matlab
-======================
+DT-SCS Light - Matlab
+=====================
 
-This is the Matlab Code folder.
+This repository containts the MATLAB code used to simulate the DT-SCS network. It also includes Nesterov's algorithm for faster convergence.
 
-This will be uploaded shortly.
+I'm currently writing the guide to these matlab files.
